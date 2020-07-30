@@ -1,0 +1,56 @@
+.inicio-main h1 {
+    margin: 24px auto;
+}
+
+.inicio-main .content {
+    display: flex;
+    align-items: center;
+}
+
+.inicio-main .content .vl {
+    width: 1px;
+    height: 300px; 
+
+    background: #000;
+
+    margin: 12px;
+}
+
+.inicio-main .content h2 {
+    margin: 12px auto;
+}
+
+.inicio-main .content p {
+    line-height: 1.4em;
+    letter-spacing: .25em;
+
+    text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+    .inicio-main .content {
+        flex-direction: column;
+    }
+
+    .inicio-main .content .vl {
+        height: 1px;
+        width: 300px; 
+
+        background: #000;
+
+        margin: 12px;
+        margin-top: 30px;
+    }
+
+    .inicio-main h1 {
+        text-align: center;
+    }
+
+    .inicio-main .content h2 {
+        text-align: center;
+    }
+
+    .inicio-main .content p {
+    padding: 8px;
+    }
+}

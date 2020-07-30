@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>repl.it</title>
+    
+    <script src="https://kit.fontawesome.com/75c77418f5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link href="/styles/main.css" rel="stylesheet" type="text/css"/>
+    <link href="/styles/contato.css" rel="stylesheet" type="text/css"/>
+    <link href="/styles/responsive.css" rel="stylesheet" type="text/css"/>
+
+    <script defer src="/scripts/responsive.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+		<header id="header">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">HERO</a>
+                </div>
+                <div id="burger" class="burger" onclick="showMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav id="menu">
+                    <a href="inicio.html"><li>O Início</li></a>
+	                <a href="jornada.html"><li>Jornada</li></a>
+	                <a href="contato.html"><li>Contato</li></a>
+	                <a href="apoie.html"><li>Apoie</li></a>
+                </nav>
+            </div>
+        </header>  
+        
+        <main class="contato-main container">
+            <form id="contato">
+                <div class="field1 field">
+                    <input type="text" required/>
+                    <label for="name">Nome<span>&#10003</span></label>
+                </div>
+                <div class="field2 field">
+                    <input type="text" required/>
+                    <label for="email">Email<span>&#10003</span></label>
+                </div>
+                <div class="field3 field">
+                    <input type="text" required/>
+                    <label for="email">Assunto<span>&#10003</span></label>
+                </div>
+
+                <textarea userscalable="no" placeholder="Escreva aqui a sua mensagem..."></textarea>
+                <button>ENVIAR</button>
+            </form>
+
+            <aside>
+                <h1>Entre em contato<br> conosco</h1>
+                <h3>Ficou com dúvidas sobre o projeto?</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quibusdam deleniti quasi provident tenetur ab quae eius beatae molestiae quo! Ab laudantium amet porro doloribus, eos aliquid incidunt quasi quaerat.</p>
+            </aside>
+        </main>     
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="menu">
+                <a href="inicio.html"><li>O Início</li></a>
+	            <a href="jornada.html"><li>Jornada</li></a>
+	            <a href="contato.html"><li>Contato</li></a>
+	            <a href="apoie.html"><li>Apoie</li></a>
+            </div>
+
+            <div class="copy">
+                <span class="date">2020</span>
+                <span>Copyright &copy Alisson Curvina</span>
+            </div>
+
+            <div class="redes">
+                <a><li><i class="fab fa-instagram"></i><span>Instagram</span></li></a>
+                <a><li><i class="fab fa-facebook-f"></i><span>Facebook</span></li></a>
+                <a><li><i class="fab fa-youtube"></i><span>YouTube</span></li></a>
+                <a><li><i class="fab fa-twitter"></i><span>Twitter</span></li></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

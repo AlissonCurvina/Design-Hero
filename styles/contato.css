@@ -1,0 +1,136 @@
+main {
+    display: flex;
+
+    margin-top: 20px;
+}
+
+main #contato {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+}
+
+main #contato .field {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 10px;
+    position: relative;
+}
+
+main #contato .field label {
+    margin: 5px 0;
+    position: absolute;
+
+    top: 12px;
+    left: 6px;
+
+    transition: 1s;
+
+    color: #0007;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+main #contato .field:hover label {
+    top: -10px;
+    left: 0;
+
+    color: #000;
+}
+
+main #contato .field span {
+    margin-left: 5px;
+
+    visibility: hidden;
+}
+
+main #contato .field input:focus + label {
+    top: -10px;
+    left: 0;
+
+    color: #000;
+}
+
+main #contato .field input:valid + label {
+    top: -10px;
+    left: 0;
+
+    color: #000;
+}
+
+main #contato .field input:valid + label span {
+    visibility: visible;
+
+    transition-delay: 2s;
+}
+
+main #contato .field input,
+main #contato textarea {
+    padding: 6px;
+    border: none;
+    border-bottom: .1em solid black;
+    margin-top: 15px;
+}
+
+main #contato textarea {
+    margin: 20px 0;
+    height: 200px;
+    resize: vertical;
+}
+
+main #contato button {
+    display: block;
+    width: 100px;
+    height: 30px;
+
+    padding: 8px;
+
+    background: #fff;
+    border: 1px solid black;
+
+    cursor: pointer;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+main aside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    width: 50%;
+
+    padding: 16px;
+}
+
+main aside h1 {
+    font-family: 'Recursive', sans-serif;
+    font-size: 56px;
+    font-weight: lighter;
+}
+
+main aside h3 {
+    margin: 20px 0;
+
+    font-family: 'Recursive', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        flex-direction: column-reverse;
+    }
+
+    main #contato,
+    main aside {
+        width: 100%;
+        padding: 16px;
+    }
+
+    button {
+        margin: 0 auto;
+    }
+}
+

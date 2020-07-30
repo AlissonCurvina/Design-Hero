@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>HERO</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/75c77418f5.js" crossorigin="anonymous"></script>
+    <script defer src="./scripts/responsive.js"></script>
+
+    <link href="./styles/main.css" rel="stylesheet" type="text/css"/>
+    <link href="./styles/apoie.css" rel="stylesheet" type="text/css"/>
+    <link href="./styles/responsive.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div class="wrapper">
+        <header id="header">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">HERO</a>
+                </div>
+                <div id="burger" class="burger" onclick="showMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav id="menu">
+                    <a href="inicio.html"><li>O Início</li></a>
+	                <a href="jornada.html"><li>Jornada</li></a>
+	                <a href="contato.html"><li>Contato</li></a>
+	                <a href="apoie.html"><li>Apoie</li></a>
+                </nav>
+            </div>
+        </header>
+    
+        <main class="container">
+            <h2>Gostou do projeto? Venha fazer parte nos apoiando.</h2>
+            <h3>Faça uma doação pela sua plataforma favorita</h3>
+
+            <div class="cards">
+                <div class="card patreon">
+                    <img src="https://seeklogo.com/images/P/patreon-logo-48DB1CF04F-seeklogo.com.png"><br>
+                    <span>Vire um patrão pelo patreon</span><br>
+                    <input type="text" maxlength="4" class="donate"/><span>R$</span><br>
+                    <button>Fazer doação</button>
+                </div>
+                <div class="card paypal">
+                    <img src="https://lh3.googleusercontent.com/proxy/oxuDUqNCcv1l99ljxdG1e4ovgFyCcuTigWkqYdR5kllVkPCj2TGyvYOiovi2z3WafkrUhQQF9sYOHkaBjSjjYsWnjzPe3U_yoUaBz3L9AEjIaqmRgpU"><br>
+                    <span>Doe com sua conta Paypal</span><br>
+                    <input type="text" maxlength="4" class="donate"/><span>R$</span><br>
+                    <button>Fazer doação</button>
+                </div>
+                <div class="card pagseguro">
+                    <img src="https://www.meifacil.com/Content/Landing/Machine/Images/pagseguro/logo-pagseguro-2.png"><br>
+                    <span>Doe com sua conta Pagseguro</span><br>
+                    <input type="text" maxlength="4" class="donate"/><span>R$</span><br>
+                    <button>Fazer doação</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="menu">
+                <a href="inicio.html"><li>O Início</li></a>
+	            <a href="jornada.html"><li>Jornada</li></a>
+	            <a href="contato.html"><li>Contato</li></a>
+	            <a href="apoie.html"><li>Apoie</li></a>
+            </div>
+            <div class="copy">
+                <span class="date">2020</span>
+                <span>Copyright &copy Alisson Curvina</span>
+            </div>
+            <div class="redes">
+                <a><li><i class="fab fa-instagram"></i><span>Instagram</span></li></a>
+                <a><li><i class="fab fa-facebook-f"></i><span>Facebook</span></li></a>
+                <a><li><i class="fab fa-youtube"></i><span>YouTube</span></li></a>
+                <a><li><i class="fab fa-twitter"></i><span>Twitter</span></li></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
